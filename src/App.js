@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Link, Redirect, Switch } from 'react-router-dom'
+import './app.css'
+import Home from './pages/Home'
+import Post from './pages/Post'
+import MainHeader from './pages/Common'
+import React from 'react'
+import History from './pages/History'
+import ScrollToTop from './components'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ScrollToTop>
+        <div className="App">
+          <MainHeader></MainHeader>
+          <Switch>
+            <Route path="/history" component={History}></Route>
+            <Route path="/post/:id" component={Post}></Route>
+            <Route exact path="/" component={Home}></Route>
+          </Switch>
+        </div>
+      </ScrollToTop>
+    </BrowserRouter>
   );
+}
+
+class Test extends React.Component {
+  render() {
+    return (<div>Hello</div>)
+  }
 }
 
 export default App;
