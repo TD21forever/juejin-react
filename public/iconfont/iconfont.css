@@ -1,6 +1,8 @@
 @font-face {
-  font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1629800025976') format('truetype');
+  font-family: "iconfont"; /* Project id 2766295 */
+  src: url('iconfont.woff2?t=1630462189478') format('woff2'),
+       url('iconfont.woff?t=1630462189478') format('woff'),
+       url('iconfont.ttf?t=1630462189478') format('truetype');
 }
 
 .iconfont {
@@ -11,11 +13,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-comment:before {
-  content: "\e603";
+.icon-thumb:before {
+  content: "\e61c";
 }
 
-.icon-thumb:before {
-  content: "\ea48";
+.icon-top:before {
+  content: "\e669";
+}
+
+.icon-comment:before {
+  content: "\e603";
 }
 

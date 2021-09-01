@@ -30,7 +30,7 @@ header .item-list {
   font-size: 15.96px;
 }
 header .item-list li {
-  padding: 0 14px;
+  padding: 0 8px;
 }
 header .item-list .title-box {
   position: absolute;
@@ -52,6 +52,14 @@ header .item-list .login-button {
   padding: 3.6px 20.4px;
   border-radius: 2px;
 }
+header .item-list .delete-button {
+  font-size: 15.6px;
+  color: #ff3c00;
+  background-color: transparent;
+  border: 1px solid #ff3c00;
+  padding: 3.6px 20.4px;
+  border-radius: 2px;
+}
 header .item-list .search-box {
   background-color: #f4f5f5;
   height: 30.38px;
@@ -64,4 +72,20 @@ header .item-list .search {
   outline: none;
   background-color: transparent;
   line-height: 30.38px;
+}
+.top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  border: none;
+  outline: none;
+  background-color: #89cff0;
+  color: white;
+  cursor: pointer;
+  z-index: 99;
 }

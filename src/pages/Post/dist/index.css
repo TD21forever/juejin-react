@@ -35,6 +35,8 @@
 }
 .article-container .article-info-box .text-info .subscribe {
   padding: 1px 20px;
+  border: 1px solid #6cbd45;
+  background-color: #fff;
 }
 .article-container .article-img {
   width: 100%;
