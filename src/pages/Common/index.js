@@ -30,7 +30,7 @@ class MainHeader extends React.Component {
             <header className="header-container">
                 <Link to="/" className="logo"></Link>
                 <ul className="item-list">
-                    <li className="title-box"><Link to="/" className="title">首页</Link></li>
+                    <li className="title-box"><Link to="/" className="title" >首页</Link></li>
                     {this.renderButton()}
                 </ul>
 

@@ -19,7 +19,7 @@ export default class Home extends React.Component {
                     curSortBy
                 }
             } = this
-            if (this.props.location.pathname === "/" && window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight) {
+            if (this.props.location.pathname === "/" && window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight) {
                 getArticle(curCategoryId, curSortBy, this.state.articles.length, numPerLoad)
             }
         }, 100)
