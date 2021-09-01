@@ -29,7 +29,6 @@ class History extends Component {
     }
 
     renderNoHistory = ()=>{
-        console.log(this.state.articleInfo.length === 0);
         if(this.state.articleInfo.length === 0)
             return (
 

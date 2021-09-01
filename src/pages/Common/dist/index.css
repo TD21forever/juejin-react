@@ -51,6 +51,7 @@ header .item-list .login-button {
   border: 1px solid #007fff;
   padding: 3.6px 20.4px;
   border-radius: 2px;
+  background-color: #fff;
 }
 header .item-list .delete-button {
   font-size: 15.6px;
@@ -80,11 +81,11 @@ header .item-list .search {
   text-align: center;
   line-height: 50px;
   position: fixed;
-  bottom: 50px;
+  bottom: 70px;
   right: 10px;
   border: none;
   outline: none;
-  background-color: #89cff0;
+  background-color: rgba(9, 54, 255, 0.3);
   color: white;
   cursor: pointer;
   z-index: 99;

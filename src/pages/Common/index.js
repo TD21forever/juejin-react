@@ -67,7 +67,9 @@ class BackToTop extends React.Component {
 
             let scrollTop = document.documentElement.scrollTop
 
-            if(scrollTop > 500 && scrollTop-this.state.memScrollTop > 0)
+            if(scrollTop > 500 && scrollTop<1500 && scrollTop-this.state.memScrollTop > 0)
+                this.setState({show:true,memScrollTop:scrollTop})
+            else if(scrollTop>1500)
                 this.setState({show:true,memScrollTop:scrollTop})
             else
                 this.setState({show:false,memScrollTop:scrollTop})

@@ -19,7 +19,7 @@ export default class Home extends React.Component {
                     curSortBy
                 }
             } = this
-            if (this.props.location.pathname === "/" && window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight) {
+            if (this.props.location.pathname === "/" && window.innerHeight + document.documentElement.scrollTop >= document.documentElement.offsetHeight) {
                 getArticle(curCategoryId, curSortBy, this.state.articles.length, numPerLoad)
             }
         }, 100)
@@ -86,8 +86,6 @@ export default class Home extends React.Component {
             // 这个是子nav
             this.setState({ curChildCategoryId: id })
         }
-
-
 
 
     }
@@ -193,7 +191,6 @@ class Nav extends React.Component {
 
 class PostList extends React.Component {
 
-
     render() {
         return (
             <>
@@ -205,7 +202,6 @@ class PostList extends React.Component {
                     <div className="end">到底了～</div>
                 }
             </>
-
         )
     }
 }

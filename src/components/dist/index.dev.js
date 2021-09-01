@@ -42,7 +42,6 @@ function (_Component) {
     key: "componentDidUpdate",
     value: function componentDidUpdate(prevProps, prevState, snapshot) {
       if (this.props.location.pathname !== prevProps.location.pathname) {
-        console.log(this.props.location.pathname, prevProps.location.pathname);
         window.scrollTo(0, 0);
       }
     }

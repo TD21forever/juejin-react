@@ -79,8 +79,13 @@ nav {
         height: 24px;
         display: flex;
         color: #86909C;
-        font-size: 4px;
         line-height: 24px;
+        vertical-align: middle;
+
+
+        .author{
+            font-size: 14px;
+        }
 
         .author::after {
             content: "";
@@ -89,12 +94,10 @@ nav {
             height: 17px;
             background-color: #86909c;
             margin: 0 14px;
-            vertical-align: middle;
         }
 
         .date{
-            vertical-align:bottom;
-            font-size: 10px;
+            font-size: 14px;
             
         }
 
@@ -139,7 +142,7 @@ nav {
     }
 
     .foot-container {
-        font-size: 4px;
+        font-size: 14px;
         height: 14px;
         width: 100%;
         display: flex;
@@ -164,6 +167,9 @@ nav {
 
             span {
                 margin: 0 5px;
+                background: #fafafa;
+                border-radius: 2px;
+                padding: 4px 5px;
             }
         }
     }
@@ -181,7 +187,7 @@ nav {
 
 footer {
     position: fixed;
-    height: 44px;
+    height: 65px;
     width: 100%;
     bottom: 0;
     left: 0;
@@ -190,11 +196,12 @@ footer {
     justify-content: space-around;
     align-items: center;
     background-color: #fff;
-
+    box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.2);
+    
     a {
         text-decoration: none;
         color: #86909C;
-
+        font-size: 16px;
         &.activate{
             color: #007fff;
         }
